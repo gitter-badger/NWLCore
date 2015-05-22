@@ -1,0 +1,12 @@
+name: NWLCore
+main: com.nimbusweblab.nwlcore.NWLCore
+version: 0.0.8.2-SNAPSHOT_1.8.5-R0.1-SNAPSHOT
+description: Provides a core set of commands and utilities for all Nimbus Web Lab servers and plugins.
+author: inventor02
+commands:
+    nwl:
+        usage: /nwl [help | args]
+        description: Base NWLCore command
+    staff:
+        usage: /staff [help | args]
+        description: NWLCore Staff Command
