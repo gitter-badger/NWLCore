@@ -24,7 +24,13 @@ public class StaffCommand implements CommandExecutor {
 			{
 				if (args.length == 1) {
 					if (args[0].equalsIgnoreCase("help")) {
-
+						sdr.sendMessage(ChatColor.WHITE + "-----"
+								+ ChatColor.GREEN + " NWLCore Staff Help "
+								+ ChatColor.WHITE + "-----");
+						sdr.sendMessage(ChatColor.DARK_PURPLE
+								+ "/staff uuid [playername]: "
+								+ ChatColor.GREEN
+								+ "Gets the UUID of the player specified.");
 					} else {
 						sdr.sendMessage(ChatColor.DARK_RED
 								+ "Unknown command! Do /staff!");
