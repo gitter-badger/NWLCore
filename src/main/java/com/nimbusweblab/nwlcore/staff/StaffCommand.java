@@ -29,7 +29,7 @@ public class StaffCommand implements CommandExecutor {
 						sdr.sendMessage(ChatColor.DARK_RED
 								+ "Unknown command! Do /staff!");
 					}
-				} else if (!sdr.hasPermission("nwlcore.staff.member")) {
+				} else {
 					sdr.sendMessage(ChatColor.DARK_RED
 							+ "You do not have permission to do this!"
 							+ ChatColor.BLUE
