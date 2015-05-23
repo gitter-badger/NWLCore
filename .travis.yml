@@ -12,8 +12,7 @@ before_deploy:
 deploy:
   skip_cleanup: true
   provider: releases
-  api_key:
-    secure: b6d60c18c08d22dcc02873da97f1eee842c869ca
+  api_key: 731c0dfb2ea68a47e8181abb29efee436656b0c4
   on:
     tags: false
     all_branches: true
