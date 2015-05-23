@@ -1,3 +1,10 @@
 language: java
 jdk:
     - oraclejdk7
+deploy:
+  provider: releases
+  api_key: "144a88e569af43900a16d2960dd4139280160da9"
+  file: "NWLCore.jar"
+  skip_cleanup: true
+  on:
+    tags: true
