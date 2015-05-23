@@ -13,7 +13,7 @@ deploy:
   skip_cleanup: true
   provider: releases
   api_key:
-    secure: [redacted]
+    secure: b6d60c18c08d22dcc02873da97f1eee842c869ca
   on:
     tags: false
     all_branches: true
