@@ -19,9 +19,7 @@ public class StaffCommand implements CommandExecutor {
 						+ "NWLCore command for staff members.");
 				sdr.sendMessage(ChatColor.DARK_PURPLE + "Users: "
 						+ ChatColor.GREEN + "Nimbus Web Lab Official Staff");
-			} else if (sdr.hasPermission("nwlcore.staff.member"))
-				;
-			{
+			} else if (sdr.hasPermission("nwlcore.staff.member")) {
 				if (args.length == 1) {
 					if (args[0].equalsIgnoreCase("help")) {
 						sdr.sendMessage(ChatColor.WHITE + "-----"
