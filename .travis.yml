@@ -1,23 +1,10 @@
 language: java
 jdk:
     - oraclejdk7
-install: true
-before_deploy:
-  - git config --global user.email "builds@travis-ci.com"
-  - git config --global user.name "Travis CI"
-  - export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
-  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://github.com/inventor02/NWLCore --tags
-  - ls -R
 deploy:
-  skip_cleanup: true
   provider: releases
-  api_key: 731c0dfb2ea68a47e8181abb29efee436656b0c4
+  api_key: "144a88e569af43900a16d2960dd4139280160da9"
+  file: "NWLCore.jar"
+  skip_cleanup: true
   on:
-    tags: false
-    all_branches: true
-branches:
-  except:
-    - /^*-v[0-9]/
-
-  
+    tags: true
